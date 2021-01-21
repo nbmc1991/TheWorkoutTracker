@@ -18,5 +18,14 @@ router.get('exercise', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/exercise.html'));
 });
 
+// router.get('/workouts', (req, res) => {
+
+//     Workout.find({})
+//         .then(workoutData => {
+//             res.json(workoutData);
+//         })
+//         .catch(err => res.json(err.message));
+// });
+
 module.exports = router;
 

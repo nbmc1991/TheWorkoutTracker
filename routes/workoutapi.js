@@ -10,7 +10,7 @@ router.get('/workouts', (req, res) => {
         .catch(err => res.json(err.message));
 });
 
-router.post('/api/workouts/', (req, res) => {
+router.post('/workouts/', (req, res) => {
     Workout.create({})
         .then(workoutInfo => {
             res.json(workoutInfo);
