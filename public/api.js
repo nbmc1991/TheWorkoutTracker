@@ -12,6 +12,9 @@ const API = {
   },
   async addExercise(data) {
     const id = location.search.split("=")[1];
+    //const id = new URLSearchParams(location.search)
+    //id.entries().map(key => console.log(key))
+    // CHeckout the URLSearchParams constructor
 
     const res = await fetch("/api/workouts/" + id, {
       method: "PUT",
