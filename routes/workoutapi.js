@@ -6,7 +6,7 @@ router.get('/workouts', (req, res) => {
         {
             $addFields: {
                 totalDuration: {
-                    $sum: "$exercises.duration",
+                    $sum: "$exercise.duration",
                 },
             },
         },
@@ -22,7 +22,7 @@ router.get('/workouts/range', (req, res) => {
         {
             $addFields: {
                 totalDuration: {
-                    $sum: "$exercises.duration",
+                    $sum: "$exercise.duration",
                 },
             },
         },
@@ -61,7 +61,7 @@ router.put("/workouts/:id", (req, res) => {
 
 router.delete("/workouts", (req, res) => {
     Workout.findByIdAndDelete(req.body.id, (err, data) => {
-        res.json(true);
+        res.json(data);
         if (err) {
             res.json(err.message);
         }
