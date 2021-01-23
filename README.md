@@ -33,7 +33,8 @@
 
 this application will help developers by quickly generating a professional README.md file so they can devote their time to making their actual project
 
- ![](https://github.com/nbmc1991/readmegenerator/blob/main/visual/2020-11-13.png)
+ ![](./public/images/screenshot1.png)
+  ![](./public/images/screenshot2.png)
 
 ## Installation
 
